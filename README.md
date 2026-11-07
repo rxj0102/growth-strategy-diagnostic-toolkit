@@ -1,5 +1,7 @@
 # Growth Strategy Diagnostic Toolkit
 
+[![CI](https://github.com/rxj0102/growth-strategy-diagnostic-toolkit/actions/workflows/ci.yml/badge.svg)](https://github.com/rxj0102/growth-strategy-diagnostic-toolkit/actions/workflows/ci.yml)
+
 A Python toolkit that reproduces the analytical workstream of a
 **customer-insight-driven growth strategy engagement** for a mid-market
 subscription/services business, end-to-end: segmentation, a growth bridge,
