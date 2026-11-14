@@ -177,3 +177,29 @@ be used for actual business decisions. The *structure* of the analysis —
 how a growth bridge reconciles, how TAM/SAM/SOM should be built two ways
 and reconciled, how a hypothesis tree ties issues to evidence, how an
 impact/effort matrix prioritizes initiatives — is the reusable part.
+
+## Reproducibility
+
+### Data availability
+
+No external data is downloaded. Inputs are generated or parameterised inside the code.
+
+### Computational requirements
+
+- Python 3.12.3. Every dependency version is pinned in `uv.lock`.
+- Checked on Linux x86_64 with 2 CPU cores and 8 GB RAM. No GPU is needed.
+
+```bash
+pip install uv     # once
+uv sync            # installs the exact pinned environment
+uv run pytest -q   # runs the test suite
+```
+
+### Runtime
+
+The test suite (35 tests) finishes in about 19 seconds on the machine above, including any data downloads it triggers.
+
+### Citation
+
+Citation metadata is in `CITATION.cff`. GitHub turns it into a Cite this repository button on the repo page.
+
